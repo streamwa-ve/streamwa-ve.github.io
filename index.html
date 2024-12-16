@@ -33,48 +33,34 @@ body {
 
 /* Header Styling */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #333;
-  color: white;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #270062;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            transition: background-color 0.5s ease;
+        }
 
-/* Hamburger menu 
-.hamburger-menu {
-  display: block; /* visible on all screens */
-  font-size: 3rem;
-  cursor: pointer;
-}
+        .header logo {
+            font-size: 2.5rem;
+            color: #ffbe0b;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
 
-/* Register Button Styling */
-.register-btn {
-  background: #ff5722; /* Orange background */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  box-shadow: 0 0 15px 3px rgba(0, 123, 255, 0.8); /* Blue glow by default */
-}
+        .header logo:hover {
+            transform: scale(1.1);
+        }
 
-/* Glowing Blue Effect when hovered */
-.register-btn:hover {
-  background: #ff5722; /* Keep the original background color */
-  box-shadow: 0 0 20px 5px rgba(0, 123, 255, 1); /* Stronger blue glow */
-}
-
-/* Change glow color when button is clicked */
-.register-btn:active {
-  box-shadow: 0 0 20px 5px rgba(0, 255, 0, 1); /* Green glow on click */
-}
+        .header .hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
 /* Side Menu */
 .side-menu {
   position: fixed;
@@ -140,6 +126,34 @@ body {
     padding: 8px 15px;
   }
 }
+.top-buttons {
+
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+           
+        }
+
+        .top-buttons a {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #2b96ff, #006cff);
+            color: #26ff00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px #50ff00, 0 0 40px #50ff00;
+    color: #ffffff;
+        }
+
+        .top-buttons a:hover {
+            background-color: #ffd60a;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
 /* WELCOME SECTION */
 .welcome {
   background: url('backgroundimage.jpeg') no-repeat center center/cover;
@@ -154,7 +168,7 @@ body {
 .welcome h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #f8ff00;
+  color: #ff000a;
   opacity: 0; /* Make text initially invisible */
   animation: fadeInUp 2s ease-in forwards; /* Animation for text */
 }
@@ -597,6 +611,37 @@ body {
   bottom: 0;
   width: 100%;
 }
+.cta-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 25px 60px;
+    background-color: #0003ff;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #3a86ff;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .get-started-btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -613,19 +658,53 @@ body {
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 480px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .top-buttons {
+                top: 60px;
+            }
+
+            .top-buttons a {
+                padding: 6px 10px;
+            }
+        }
+@media screen and (max-width: 768px) {
+   
+            .top-buttons {
+                flex-direction: column;
+                top: 80px;
+                right: 10px;
+            }
+
+            .top-buttons a {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
  <!-- HEADER SECTION -->
-<header class="header">
-  <div class="logo">STREAMQASH</div>
-  <a href="https://www.streamwa-ve.com/user/register.php?ref=RayaSTAMET">
-  <button class="register-btn">REGISTER</button>
-</a>
+<div class="header">
+  <div class="logo"><strong>STREAMQASH</strong></div></head~|>
+  
   <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">&#9776;</div>
-</header>
+  </div>
+
+<div class="top-buttons">
+        <a href="https://api.whatsapp.com/send?phone=+254748000578&text=Hey+there+tell+me+more+about+StreamQash">WhatsApp</a>
+        <a href="tel:+254748000578">Call Now</a>
+        <a href="https://www.streamwa-ve.com/user/register.php?ref=RayaSTAMET">Register</a>
+    </div>
 
 <!-- SIDE MENU -->
 <div class="side-menu" id="sideMenu">
@@ -643,6 +722,9 @@ body {
   <section id="welcome" class="welcome">
     <h1>Welcome to StreamQash Agencies</h1>
     <p><strong>Where possibilities turn into success. We offer a reliable, innovative platform designed to empower you. With round-the-clock support and instant access to rewards, your journey to greatness begins here. Join us today and redefine your future!</strong></p>
+     <div class="cta-container">
+            <a href="https://www.streamwa-ve.com/user/register.php?ref=RayaSTAMET" class="get-started-btn">Get Started</a>
+        </div>
   </section>
 
   <!-- WHAT IS STREAMQASH SECTION -->
@@ -820,17 +902,9 @@ body {
 function toggleMenu() {
   const sideMenu = document.getElementById('sideMenu');
   sideMenu.classList.toggle('active');  // Toggle the 'active' class to open/close the menu
-}
-// Add an event listener to change the glow color when clicked
-document.querySelector('.register-btn').addEventListener('click', function() {
-  // Change the button's glow to a different color (e.g., green)
-  this.style.boxShadow = '0 0 20px 5px rgba(0, 255, 0, 1)'; // Green glow on click
-  
-  // Optionally, you can reset the glow after a few seconds:
-  setTimeout(() => {
-    this.style.boxShadow = '0 0 15px 3px rgba(0, 123, 255, 0.8)'; // Back to blue glow
-  }, 3000); // Reset after 3 seconds
-});
+
+
+};
 // Track WhatsApp Button Click
 document.querySelectorAll('.whatsapp-btn').forEach(button => {
   button.addEventListener('click', () => {
