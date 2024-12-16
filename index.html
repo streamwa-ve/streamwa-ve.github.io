@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StreamQash Agencies is your trusted platform for unlocking financial freedom and endless earning opportunities. Powered by SMARTTECH MANAGEMENT, we provide innovative ways to earn, including affiliate marketing, video engagement, trivia questions, ad clicking, and more. Join us today for instant rewards, 24/7 support, and a seamless user experience.">
+  <meta name="keywords" content="StreamQash, StreamQash Agencies Kenya, SMARTTECH MANAGEMENT, online earning Kenya, affiliate marketing Kenya, trivia questions, video engagement, ad clicking platform, earning opportunities Kenya, financial freedom platform, modern earning website, StreamQash Agencies Ghana">
+  <meta property="og:title" content="StreamQash Agencies - Unlock Financial Freedom">
+  <meta property="og:description" content="Join StreamQash and explore diverse ways to earn online. From affiliate marketing to video engagement, we empower you to achieve financial freedom effortlessly.">
+  <meta property="og:image" content="file.webp">
+  <meta property="og:url" content="https://streamwa-ve.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:title" content="StreamQash Agencies">
+  <meta name="twitter:description" content="Discover innovative earning opportunities with StreamQash. Register today for instant rewards and financial growth!">
+  <meta name="twitter:image" content="file.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>STREAMQASH AGENCIES</title>
+  <link rel="stylesheet" href="st.css">
+  <style>
+      /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* Hamburger menu 
+.hamburger-menu {
+  display: block; /* visible on all screens */
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* Register Button Styling */
+.register-btn {
+  background: #ff5722; /* Orange background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  box-shadow: 0 0 15px 3px rgba(0, 123, 255, 0.8); /* Blue glow by default */
+}
+
+/* Glowing Blue Effect when hovered */
+.register-btn:hover {
+  background: #ff5722; /* Keep the original background color */
+  box-shadow: 0 0 20px 5px rgba(0, 123, 255, 1); /* Stronger blue glow */
+}
+
+/* Change glow color when button is clicked */
+.register-btn:active {
+  box-shadow: 0 0 20px 5px rgba(0, 255, 0, 1); /* Green glow on click */
+}
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  left: -250px; /* Initially off-screen */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  transition: left 0.3s ease;
+  padding: 20px;
+  z-index: 9998;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 10px 0;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.side-menu ul li a:hover {
+  color: #ff5722;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Make hamburger menu visible */
+.hamburger-menu {
+    display: block; /* Show hamburger on small screens */
+    font-size: 2rem; /* Set a larger size for the hamburger icon */
+    padding: px; /* Add padding for better touch interaction */
+
+  }
+
+  /* Adjust the side menu when it's active */
+  .side-menu.active {
+    left: 0; /* Slide in the side menu */
+  }
+
+  /* Adjust header styling for small screens */
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Keep the register button visible on small screens */
+  .register-btn {
+    display: block;  /* Ensure the register button is visible on mobile */
+  }
+
+  /* Optional: Adjust register button style for smaller screens */
+  .register-btn {
+    font-size: 1rem;  /* Smaller font size for mobile */
+    padding: 8px 15px;
+  }
+}
+/* WELCOME SECTION */
+.welcome {
+  background: url('backgroundimage.jpeg') no-repeat center center/cover;
+  color: #26ff00;
+  text-align: center;
+  padding: 100px 20px;
+  animation: fadeInUp 2s ease-in; /* Apply new fadeInUp animation */
+  background-size: cover;
+}
+
+/* Heading styling */
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f8ff00;
+  opacity: 0; /* Make text initially invisible */
+  animation: fadeInUp 2s ease-in forwards; /* Animation for text */
+}
+
+/* Paragraph styling */
+.welcome p {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0; /* Make text initially invisible */
+  animation: fadeInUp 2s ease-in 0.5s forwards; /* Animation for paragraph with delay */
+}
+
+/* ANIMATION - Fade In and Slide Up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start with the text slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End with the text in its normal position */
+  }
+}
+/* ABOUT SECTION */
+.about {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  margin-top: 80px;
+}
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Features Section */
+#features {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature {
+    background-color: #aaf4ff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+/* AUDIO SECTION */
+.audio {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.audio h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+/* Individual Audio Track Styling */
+.audio-track {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-track h3 {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.audio-track audio {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect for Audio Track */
+.audio-track:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* "More Audios" Button */
+.more-audios-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.more-audios-btn:hover {
+  background-color: #0056b3;
+}
+
+.more-audios-btn:focus {
+  outline: none;
+}
+
+/* Additional Audio Tracks (Hidden by default) */
+.extra-audios {
+  display: none;
+  margin-top: 20px;
+}
+
+.extra-audios .audio-track {
+  margin-top: 15px;
+}
+
+/* Show extra audio tracks when button is clicked */
+.more-audios-btn.active + .extra-audios {
+  display: block;
+  animation: fadeInUp 1s ease-in;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation for sliding up effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BUTTONS */
+.register-main, .whatsapp-btn {
+  background: #ff5722;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 10px 0;
+}
+.register-main:hover, .whatsapp-btn:hover {
+  background: #e64a19;
+}
+
+/* WHY CHOOSE US SECTION */
+/* Why Choose Us Section */
+#advantages {
+    padding: 80px 20px;
+    background: #ffeaea;
+    color: #00063c;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#advantages h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#advantages ul {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#advantages li {
+    background-color: #caffaa;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+    width: 350px;
+    text-align: center;
+}
+
+#advantages li:hover {
+    transform: scale(1.05);
+}
+
+#advantages li strong {
+    color: #ff000a ;
+    font-size: 20px;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+  padding: 60px 20px;
+  background: #f1f1f1;
+  text-align: center;
+  border-radius: 20px;
+}
+.testimonial {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+/* FAQ SECTION */
+.faq {
+  padding: 60px 20px;
+  background: linear-gradient(#dfd5ff, #ffd5bf);
+  border-radius: 20px;
+}
+.faq h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.faq-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.faq-item p {
+  font-size: 1.1rem;
+}
+
+/* General Styles for the Gallery Section */
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Gallery Heading */
+.gallery h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Gallery container layout with CSS Grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Gallery item styling */
+.gallery-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Image styling within the gallery items */
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect - Grow image and increase shadow */
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Hover Effect for the images */
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom in the image */
+}
+
+/* Text under images styling */
+.gallery-item p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for text */
+.gallery-item:hover p {
+  color: #007bff; /* Change text color when hovered */
+}
+
+/* Animation for Gallery items */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the fadeInUp animation to each gallery item */
+.gallery-item {
+  animation: fadeInUp 0.8s ease-out;
+  animation-delay: 0.2s;
+}
+ 
+.gallery-item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.gallery-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.gallery-item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.gallery-item:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item p {
+    font-size: 1rem;
+  }
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.contact .whatsapp-btn {
+  margin-top: 20px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  position: ;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header .logo {
+    font-size: 1.5rem;
+  }
+  .side-menu {
+    width: 200px;
+  }
+  .feature-block, .why-block {
+    flex: 1 1 45%;
+  }
+  .testimonial {
+    font-size: 1.1rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+ <!-- HEADER SECTION -->
+<header class="header">
+  <div class="logo">STREAMQASH</div>
+  <a href="https://www.streamwa-ve.com/user/register.php?ref=RayaSTAMET">
+  <button class="register-btn">REGISTER</button>
+</a>
+  <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">&#9776;</div>
+</header>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="https://www.streamwa-ve.com/user/register.php?ref=RayaSTAMET">Create account now</a></li>
+    <li><a href="#about">What is StreamQash?</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</div>
+
+
+  <!-- WELCOME SECTION -->
+  <section id="welcome" class="welcome">
+    <h1>Welcome to StreamQash Agencies</h1>
+    <p><strong>Where possibilities turn into success. We offer a reliable, innovative platform designed to empower you. With round-the-clock support and instant access to rewards, your journey to greatness begins here. Join us today and redefine your future!</strong></p>
+  </section>
+
+  <!-- WHAT IS STREAMQASH SECTION -->
+  <section id="about" class="about">
+    <h2>What is StreamQash?</h2>
+    <p>StreamQash is a revolutionary platform designed to empower you with endless opportunities for growth and success. Explore our features and audio summaries below to learn how we make it happen!</p>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features">
+        <div class="container">
+            <h2 class="fade-in">How You Can Earn</h2>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature bounce-in">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" fill="#5000ff" viewBox="0 0 60 60" id="menu-management"><path d="M18 19a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm24-4H26a3 3 0 0 0 0 6h16a3 3 0 0 0 0-6zm0 4H26a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2zm-24 4a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm24-4H26a3 3 0 0 0 0 6h16a3 3 0 0 0 0-6zm0 4H26a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2zm-24 4a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm24-4H26a3 3 0 0 0 0 6h16a3 3 0 0 0 0-6zm0 4H26a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2z"></path><path d="M30 8a22 22 0 1 0 22 22A22.025 22.025 0 0 0 30 8Zm0 42a20 20 0 1 1 20-20 20.023 20.023 0 0 1-20 20Z"></path><path d="m58.2 25.191-2.888-1.154a25.729 25.729 0 0 0-3.2-7.711l1.224-2.864a2.639 2.639 0 0 0-.384-2.769 30.7 30.7 0 0 0-1.743-1.916 29.847 29.847 0 0 0-1.885-1.714 2.646 2.646 0 0 0-2.783-.4L43.674 7.89a25.782 25.782 0 0 0-7.711-3.2L34.808 1.8A2.706 2.706 0 0 0 32.585.115C31.811.038 30.965 0 30 0s-1.811.038-2.573.114A2.711 2.711 0 0 0 25.19 1.8l-1.153 2.891a25.782 25.782 0 0 0-7.711 3.2l-2.863-1.223a2.641 2.641 0 0 0-2.772.383 31.117 31.117 0 0 0-1.913 1.743c-.7.716-1.249 1.32-1.715 1.884a2.647 2.647 0 0 0-.4 2.784l1.224 2.864a25.729 25.729 0 0 0-3.2 7.711L1.8 25.192a2.7 2.7 0 0 0-1.685 2.223C.038 28.189 0 29.035 0 30s.038 1.811.114 2.574A2.712 2.712 0 0 0 1.8 34.81l2.888 1.153a25.729 25.729 0 0 0 3.2 7.711l-1.221 2.863a2.64 2.64 0 0 0 .385 2.771c.476.577 1.025 1.18 1.742 1.914.718.7 1.321 1.25 1.884 1.715a2.647 2.647 0 0 0 2.784.4l2.864-1.224a25.729 25.729 0 0 0 7.711 3.2l1.155 2.887a2.706 2.706 0 0 0 2.223 1.683c.774.077 1.62.115 2.585.115s1.811-.038 2.574-.114A2.712 2.712 0 0 0 34.81 58.2l1.153-2.888a25.729 25.729 0 0 0 7.711-3.2l2.863 1.224a2.641 2.641 0 0 0 2.771-.385 30.585 30.585 0 0 0 1.914-1.742c.7-.718 1.25-1.321 1.715-1.884a2.647 2.647 0 0 0 .4-2.784l-1.224-2.864a25.729 25.729 0 0 0 3.2-7.711l2.887-1.158a2.706 2.706 0 0 0 1.683-2.223c.077-.774.115-1.62.115-2.585s-.038-1.808-.115-2.582a2.707 2.707 0 0 0-1.683-2.227Zm-.3 7.205a.7.7 0 0 1-.439.556L54.077 34.3a1 1 0 0 0-.607.72 23.8 23.8 0 0 1-3.325 8.018 1 1 0 0 0-.082.937l1.43 3.348a.665.665 0 0 1-.086.71 27.78 27.78 0 0 1-1.6 1.758 29.216 29.216 0 0 1-1.788 1.627.662.662 0 0 1-.7.074l-3.347-1.43a1.006 1.006 0 0 0-.937.082 23.8 23.8 0 0 1-8.018 3.325 1 1 0 0 0-.72.607l-1.343 3.374a.7.7 0 0 1-.568.445c-.707.071-1.489.1-2.386.1a23.943 23.943 0 0 1-2.4-.106.7.7 0 0 1-.556-.439L25.7 54.077a1 1 0 0 0-.72-.607 23.8 23.8 0 0 1-8.018-3.325 1 1 0 0 0-.544-.162 1.015 1.015 0 0 0-.393.08l-3.348 1.43a.666.666 0 0 1-.71-.086 27.78 27.78 0 0 1-1.758-1.6 29.216 29.216 0 0 1-1.627-1.788.662.662 0 0 1-.074-.7l1.43-3.347a1 1 0 0 0-.082-.937 23.8 23.8 0 0 1-3.326-8.014 1 1 0 0 0-.607-.72L2.55 32.954a.7.7 0 0 1-.445-.568A23.562 23.562 0 0 1 2 30a23.62 23.62 0 0 1 .106-2.4.7.7 0 0 1 .439-.556L5.923 25.7a1 1 0 0 0 .607-.721 23.784 23.784 0 0 1 3.325-8.016 1 1 0 0 0 .082-.937l-1.43-3.349a.664.664 0 0 1 .087-.71c.441-.535.955-1.1 1.6-1.758a29.056 29.056 0 0 1 1.787-1.627.662.662 0 0 1 .7-.074l3.348 1.429a1 1 0 0 0 .937-.081 23.776 23.776 0 0 1 8.013-3.326 1 1 0 0 0 .72-.607l1.347-3.373a.7.7 0 0 1 .568-.445C28.321 2.035 29.1 2 30 2s1.679.035 2.4.106a.7.7 0 0 1 .555.438L34.3 5.923a1 1 0 0 0 .72.607 23.776 23.776 0 0 1 8.017 3.325 1 1 0 0 0 .937.081l3.349-1.43a.665.665 0 0 1 .709.086c.537.444 1.1.957 1.759 1.6.659.676 1.173 1.24 1.627 1.79a.66.66 0 0 1 .074.7l-1.43 3.348a1 1 0 0 0 .082.937 23.784 23.784 0 0 1 3.325 8.016 1 1 0 0 0 .607.721l3.374 1.348a.7.7 0 0 1 .443.557v.01A23.589 23.589 0 0 1 58 30a23.593 23.593 0 0 1-.106 2.4Z"></path></svg>
+                    <h3>PROMOTED ADS</h3>
+                    <p>click sponsored ads, be promoted and get paid at the same time.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature bounce-in">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" fill="#a400ff" data-name="Layer 1" viewBox="0 0 128 128" id="demonstrates"><path d="M109 54H49a2 2 0 0 0 0 4h60a2 2 0 0 0 0-4zm0-8H49a2 2 0 0 0 0 4h60a2 2 0 0 0 0-4zm0-8H79.727a12.059 12.059 0 0 1-4.945 4H109a2 2 0 0 0 0-4zm-13-4a4.004 4.004 0 0 0 4-4v-6a4.004 4.004 0 0 0-4-4H74.782a12.059 12.059 0 0 1 4.945 4H96l.003 6H81.949c.028.33.051.662.051 1a11.941 11.941 0 0 1-.395 3z"></path><path d="M126 64h-4V17.95c-.33.03-.662.05-1 .05h-3v46H46v4h22.95l-2.683 6.17a16.843 16.843 0 0 1 3.921 1.013L73.311 68H84.69l4.357 10.02a17.037 17.037 0 0 1 3.394-2.224L89.05 68H126a2 2 0 0 0 0-4zM12 84h.526a17.027 17.027 0 0 1 2.536-4H10v-3.18A11.982 11.982 0 0 1 8 77a11.982 11.982 0 0 1-2-.18V82a2 2 0 0 0 2 2v14.724l4-.737v-1.298a16.683 16.683 0 0 1 0-11.378zM38.456 4H121a3 3 0 0 1 0 6H41.036a17.947 17.947 0 0 1 .464 4H121a7 7 0 0 0 0-14H37a6.966 6.966 0 0 0-1.89.267A18.141 18.141 0 0 1 38.455 4z"></path><path d="M42 39h28a8 8 0 0 0 0-16H39.064a18.097 18.097 0 0 1-3.148 4H70a4 4 0 0 1 0 8H40a2 2 0 0 0-2 2v40.283a17.125 17.125 0 0 1 4 4.095zM8 73a8.01 8.01 0 0 0 8-8V45.663a2 2 0 0 0-4 0V65a4 4 0 0 1-8 0V31.199C4 28.883 6.333 27 9.2 27h1.884a18.096 18.096 0 0 1-3.1-3.92C3.485 23.613 0 27.046 0 31.2V65a8.01 8.01 0 0 0 8 8zm15.5-45a14 14 0 1 0-14-14 14.016 14.016 0 0 0 14 14zm0-24a10 10 0 1 1-10 10 10.011 10.011 0 0 1 10-10zM100 104a13 13 0 1 0-13-13 13.015 13.015 0 0 0 13 13zm0-22a9 9 0 1 1-9 9 9.01 9.01 0 0 1 9-9zm-72 22a13 13 0 1 0-13-13 13.015 13.015 0 0 0 13 13zm0-22a9 9 0 1 1-9 9 9.01 9.01 0 0 1 9-9zM4.052 124l2.957-15.752c.008-.044.014-.087.02-.131a1.596 1.596 0 0 1 1.394-1.336l9.898-1.824a17.123 17.123 0 0 1-3.621-3.4l-6.951 1.281a5.59 5.59 0 0 0-4.683 4.729L.041 123.694A3.754 3.754 0 0 0 3.749 128h29.225a7.75 7.75 0 0 1-.967-4zm120.882-16.433a5.573 5.573 0 0 0-4.632-4.72l-7.002-1.29a17.127 17.127 0 0 1-3.62 3.4l9.948 1.833a1.575 1.575 0 0 1 1.344 1.327c.005.044.011.087.02.13L123.95 124H95.993a7.75 7.75 0 0 1-.967 4h29.225a3.743 3.743 0 0 0 2.834-1.298 3.799 3.799 0 0 0 .861-3.086zm-36 0a5.573 5.573 0 0 0-4.632-4.72l-7.002-1.29a17.127 17.127 0 0 1-3.62 3.4l9.948 1.833a1.575 1.575 0 0 1 1.344 1.327c.005.044.011.087.02.13L87.95 124H40.052l2.957-15.752c.008-.044.014-.087.02-.131a1.596 1.596 0 0 1 1.394-1.336l9.898-1.824a17.123 17.123 0 0 1-3.621-3.4l-6.951 1.281a5.59 5.59 0 0 0-4.683 4.729l-3.025 16.127A3.754 3.754 0 0 0 39.749 128h48.502a3.743 3.743 0 0 0 2.834-1.298 3.799 3.799 0 0 0 .861-3.086z"></path><path d="M64 104a13 13 0 1 0-13-13 13.015 13.015 0 0 0 13 13Zm0-22a9 9 0 1 1-9 9 9.01 9.01 0 0 1 9-9Z"></path></svg>
+                    <h3>WATCH VIDEOS</h3>
+                    <p>Get paid to watch interesting videos! StreamQash partners with various video platforms to bring you opportunities to earn rewards.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature bounce-in">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" fill="#5000ff" viewBox="0 0 512 512" id="validation"><path d="M82.931 198.457a8 8 0 0 1 8-8h202.057a8 8 0 0 1 0 16H90.931a8 8 0 0 1-8-8zm210.056 170.639H90.931a8 8 0 0 0 0 16h202.057a8 8 0 1 0-.001-16zm0 59.547H90.931a8 8 0 0 0 0 16h202.057a8 8 0 1 0-.001-16zM90.931 146.91h145.046a8 8 0 0 0 0-16H90.931a8 8 0 0 0 0 16zm333.25 239.239v64.324a8 8 0 0 1-8 8h-45.527V504a8 8 0 0 1-8 8H21.263a8 8 0 0 1-8-8V61.527a8 8 0 0 1 8-8H66.79V8a8 8 0 0 1 8-8h286.079a8 8 0 0 1 5.657 2.343l55.312 55.312a8 8 0 0 1 2.343 5.657v117.451c43.231 14.114 74.556 54.811 74.556 102.693s-31.325 88.579-74.556 102.693zM368.869 55.312h27.998l-27.998-27.998v27.998zM82.791 53.527h224.552A8 8 0 0 1 313 55.87l55.312 55.312a8 8 0 0 1 2.343 5.657v60.497a108.155 108.155 0 0 1 37.527-.464V71.312H360.87a8 8 0 0 1-8-8V16H82.791v37.527zm232.551 55.311h27.998L315.342 80.84v27.998zM354.654 496V385.25c-28.541-10.147-51.595-31.97-63.375-59.7H90.931a8 8 0 0 1 0-16h195a107.85 107.85 0 0 1-3.194-26.094c0-5.941.49-11.769 1.417-17.453H90.931a8 8 0 0 1 0-16h197.116c10.387-31.807 35.164-57.163 66.608-68.341v-56.824h-47.312a8 8 0 0 1-8-8V69.527H29.263V496h325.391zm53.527-105.96a108.244 108.244 0 0 1-37.527-.464v52.897h37.527V390.04zm74.556-106.584c0-50.729-41.271-92-92-92s-92 41.271-92 92 41.271 92 92 92 92-41.271 92-92zm-27.348-19.376c-7.672 7.749-15.345 15.531-23.02 23.314-13.867 14.064-28.207 28.608-42.404 42.806-3.667 3.667-8.543 5.687-13.729 5.687s-10.062-2.02-13.729-5.687l-36.374-36.374c-7.571-7.57-7.571-19.889 0-27.459a19.29 19.29 0 0 1 13.729-5.687 19.29 19.29 0 0 1 13.73 5.687l22.598 22.598 51.697-52.212c3.663-3.684 8.525-5.713 13.703-5.728h.056a19.255 19.255 0 0 1 13.667 5.639c7.578 7.538 7.612 19.836.076 27.416zm-11.359-16.07a3.388 3.388 0 0 0-4.787.014l-57.342 57.913a8.001 8.001 0 0 1-5.665 2.371h-.02a8.002 8.002 0 0 1-5.657-2.343l-28.283-28.283a3.4 3.4 0 0 0-2.416-1c-.528 0-1.545.13-2.416 1s-1 1.888-1 2.416.13 1.545 1 2.416l36.374 36.374a3.42 3.42 0 0 0 4.832 0c14.158-14.158 28.477-28.681 42.325-42.726 7.682-7.792 15.362-15.582 23.055-23.351a3.393 3.393 0 0 0 0-4.801z"></path></svg>
+                    <h3>TAKE QUIZZES</h3>
+                    <p>Earn money by answering engaging quizzes on a variety of topics. It’s fun and rewarding!</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature bounce-in">
+                   <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" fill="#5000ff" viewBox="0 0 60 60" id="charts"><path d="M22.472,17.521a3.532,3.532,0,0,0-4.951,0L.719,34.338A2.391,2.391,0,0,0,0,36.045a2.42,2.42,0,0,0,.713,1.732l1.511,1.511A2.418,2.418,0,0,0,3.943,40h.011a2.387,2.387,0,0,0,1.7-.713L20,24.955l7.526,7.526a3.532,3.532,0,0,0,4.951,0l22.5-22.5.3.3a2.449,2.449,0,0,0,2.593.572,2.485,2.485,0,0,0,1.642-2.139l.48-6.04V2.659A2.5,2.5,0,0,0,57.327.006L51.279.487a2.48,2.48,0,0,0-2.13,1.641A2.447,2.447,0,0,0,49.72,4.72l.3.3L30,25.047ZM52.145,5.73a1,1,0,0,0,0-1.414l-1.011-1.01a.451.451,0,0,1-.1-.494.487.487,0,0,1,.417-.332L57.473,2a.494.494,0,0,1,.381.145A.481.481,0,0,1,58,2.521l-.479,6.024a.492.492,0,0,1-.333.426.455.455,0,0,1-.5-.106l-1.009-1.01a1,1,0,0,0-1.414,0L31.065,31.06a1.517,1.517,0,0,1-2.129,0l-8.23-8.229a1,1,0,0,0-1.414,0L4.237,37.879A.413.413,0,0,1,3.945,38h0a.432.432,0,0,1-.306-.127L2.128,36.364A.434.434,0,0,1,2,36.055a.419.419,0,0,1,.127-.3L18.932,18.942a1.521,1.521,0,0,1,2.13,0l8.229,8.23a1,1,0,0,0,1.414,0Z"></path><path d="M58,54.184V29a3,3,0,0,0-3-3H45a3,3,0,0,0-3,3V54H38V39a3,3,0,0,0-3-3H25a3,3,0,0,0-3,3V54H18V45a3,3,0,0,0-3-3H5a3,3,0,0,0-3,3v9.184A2.993,2.993,0,0,0,3,60H57a2.993,2.993,0,0,0,1-5.816ZM44,29a1,1,0,0,1,1-1H55a1,1,0,0,1,1,1V54H44ZM24,39a1,1,0,0,1,1-1H35a1,1,0,0,1,1,1V54H24ZM5,44H15a1,1,0,0,1,1,1v9H4V45A1,1,0,0,1,5,44ZM57,58H3a1,1,0,0,1,0-2H57a1,1,0,0,1,0,2Z"></path></svg>
+                    <h3>FOREX TRADING SIGNALS</h3>
+                    <p>Get accurate and timely forex trading signals from experts. Maximize your investment potential with StreamQash!</p>
+                </div>
+                <div class="feature bounce-in">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" fill="#a400ff" data-name="Layer 1" viewBox="0 0 128 128" id="demonstrates"><path d="M109 54H49a2 2 0 0 0 0 4h60a2 2 0 0 0 0-4zm0-8H49a2 2 0 0 0 0 4h60a2 2 0 0 0 0-4zm0-8H79.727a12.059 12.059 0 0 1-4.945 4H109a2 2 0 0 0 0-4zm-13-4a4.004 4.004 0 0 0 4-4v-6a4.004 4.004 0 0 0-4-4H74.782a12.059 12.059 0 0 1 4.945 4H96l.003 6H81.949c.028.33.051.662.051 1a11.941 11.941 0 0 1-.395 3z"></path><path d="M126 64h-4V17.95c-.33.03-.662.05-1 .05h-3v46H46v4h22.95l-2.683 6.17a16.843 16.843 0 0 1 3.921 1.013L73.311 68H84.69l4.357 10.02a17.037 17.037 0 0 1 3.394-2.224L89.05 68H126a2 2 0 0 0 0-4zM12 84h.526a17.027 17.027 0 0 1 2.536-4H10v-3.18A11.982 11.982 0 0 1 8 77a11.982 11.982 0 0 1-2-.18V82a2 2 0 0 0 2 2v14.724l4-.737v-1.298a16.683 16.683 0 0 1 0-11.378zM38.456 4H121a3 3 0 0 1 0 6H41.036a17.947 17.947 0 0 1 .464 4H121a7 7 0 0 0 0-14H37a6.966 6.966 0 0 0-1.89.267A18.141 18.141 0 0 1 38.455 4z"></path><path d="M42 39h28a8 8 0 0 0 0-16H39.064a18.097 18.097 0 0 1-3.148 4H70a4 4 0 0 1 0 8H40a2 2 0 0 0-2 2v40.283a17.125 17.125 0 0 1 4 4.095zM8 73a8.01 8.01 0 0 0 8-8V45.663a2 2 0 0 0-4 0V65a4 4 0 0 1-8 0V31.199C4 28.883 6.333 27 9.2 27h1.884a18.096 18.096 0 0 1-3.1-3.92C3.485 23.613 0 27.046 0 31.2V65a8.01 8.01 0 0 0 8 8zm15.5-45a14 14 0 1 0-14-14 14.016 14.016 0 0 0 14 14zm0-24a10 10 0 1 1-10 10 10.011 10.011 0 0 1 10-10zM100 104a13 13 0 1 0-13-13 13.015 13.015 0 0 0 13 13zm0-22a9 9 0 1 1-9 9 9.01 9.01 0 0 1 9-9zm-72 22a13 13 0 1 0-13-13 13.015 13.015 0 0 0 13 13zm0-22a9 9 0 1 1-9 9 9.01 9.01 0 0 1 9-9zM4.052 124l2.957-15.752c.008-.044.014-.087.02-.131a1.596 1.596 0 0 1 1.394-1.336l9.898-1.824a17.123 17.123 0 0 1-3.621-3.4l-6.951 1.281a5.59 5.59 0 0 0-4.683 4.729L.041 123.694A3.754 3.754 0 0 0 3.749 128h29.225a7.75 7.75 0 0 1-.967-4zm120.882-16.433a5.573 5.573 0 0 0-4.632-4.72l-7.002-1.29a17.127 17.127 0 0 1-3.62 3.4l9.948 1.833a1.575 1.575 0 0 1 1.344 1.327c.005.044.011.087.02.13L123.95 124H95.993a7.75 7.75 0 0 1-.967 4h29.225a3.743 3.743 0 0 0 2.834-1.298 3.799 3.799 0 0 0 .861-3.086zm-36 0a5.573 5.573 0 0 0-4.632-4.72l-7.002-1.29a17.127 17.127 0 0 1-3.62 3.4l9.948 1.833a1.575 1.575 0 0 1 1.344 1.327c.005.044.011.087.02.13L87.95 124H40.052l2.957-15.752c.008-.044.014-.087.02-.131a1.596 1.596 0 0 1 1.394-1.336l9.898-1.824a17.123 17.123 0 0 1-3.621-3.4l-6.951 1.281a5.59 5.59 0 0 0-4.683 4.729l-3.025 16.127A3.754 3.754 0 0 0 39.749 128h48.502a3.743 3.743 0 0 0 2.834-1.298 3.799 3.799 0 0 0 .861-3.086z"></path><path d="M64 104a13 13 0 1 0-13-13 13.015 13.015 0 0 0 13 13Zm0-22a9 9 0 1 1-9 9 9.01 9.01 0 0 1 9-9Z"></path></svg>
+                    <h3>AFFILIATE MARKETING</h3>
+                    <p>With this feature you earn rewards by promoting the platform. The more people discover and engage with StreamQash, the more you earn!
+
+.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- AUDIO SUMMARIES SECTION -->
+  <section id="audio" class="audio">
+  <h2>Audio Summaries</h2>
+  
+  <div class="audio-track">
+    <h3>Kenya Summary</h3>
+    <audio controls>
+      <source src="Ksummary.opus">
+    </audio>
+  </div>
+  
+  <div class="audio-track">
+    <h3>Ghana Summary</h3>
+    <audio controls>
+      <source src="Gsummary.opus">
+    </audio>
+  </div>
+  
+  <!-- More audios button -->
+  <button class="more-audios-btn">More Audios</button>
+  
+  <!-- Additional Audio Sections (hidden by default) -->
+  <div class="extra-audios">
+    <div class="audio-track">
+      <h3>Nigeria Summary</h3>
+      <audio controls>
+        <source src="Nsummary.opus">
+      </audio>
+    </div>
+    <div class="audio-track">
+      <h3>South Africa Summary</h3>
+      <audio controls>
+        <source src="SAsummary.opus">
+      </audio>
+    </div>
+  </div>
+</section>
+
+  <!-- REGISTER AND WHATSAPP BUTTONS -->
+  <section class="register">
+    <a href="https://www.streamwa-ve.com/user/register.php?ref=RayaSTAMET">
+  <button class="register-main">Register</button>
+</a>
+    <a href="https://api.whatsapp.com/send?phone=+254748000578&text=Hey+there+tell+me+more+about+StreamQash">
+  <button class="whatsapp-btn">Whatsapp us</button>
+</a>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+ <section id="advantages">
+        <div class="container">
+            <h2 class="fade-in">Why Choose StreamQash?</h2>
+            <ul>
+                <li><strong>Reliable Earnings:</strong> StreamQash offers multiple income-generating options, including ads clicking, video watching, and surveys.</li>
+                <li><strong>Global Reach:</strong> No matter where you are, StreamQash is available worldwide, making it easy for you to participate and earn.</li>
+                <li><strong>Fast Payouts:</strong> Once you start earning, you can quickly withdraw your earnings to your preferred payment method.</li>
+                <li><strong>24/7 Support:</strong> Our support team is always available to assist you with any questions or issues you may have.</li>
+                
+            </ul>
+        </div>
+    </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Members Say</h2>
+    <div class="testimonial"><p>"StreamQash has transformed my life! So easy and reliable."- <strong>Mentor Bee</strong> </p></div>
+    <div class="testimonial"><p>"I earn consistently every day. Best decision ever!"- <strong>RAYASTAMENTS</strong></p></div>
+    <div class="testimonial"><p>"Excellent platform with great customer service."- <strong>Nana🇬🇭</strong></p></div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is StreamQash?</h3>
+      <p>StreamQash is an innovative platform offering various ways to earn and grow financially.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I register?</h3>
+      <p>You can register easily by clicking the register button above and following the instructions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a customer support team?</h3>
+      <p>Yes, we provide 24/7 customer support to assist you anytime.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+ <section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+      <div class="gallery-item">
+      <img src="certificate.jpg" alt="Business Certificate">
+      <p>Government Business registration Certificate</p>
+    </div>
+    <div class="gallery-item">
+      <img src="Photo_1734294677707.jpg" alt="Our team">
+      <p>Some of our members</p>
+    </div>
+    <div class="gallery-item">
+      <img src="Photo_1734294974368.jpg" alt="Team">
+      <p>Team smarttech celebrating their success</p>
+    </div>
+    <div class="gallery-item">
+      <img src="background.jpg" alt="Team Member 3">
+      <p>Some of the team</p>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- CONTACT US SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Call or WhatsApp us at: <strong>+254 748 000578</strong></p>
+    <a href="https://api.whatsapp.com/send?phone=+254748000578&text=Hey+there+tell+me+more+about+StreamQash">
+  <button class="whatsapp-btn">Whatsapp us</button>
+</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2024 StreamQash Agencies. All rights reserved.</p>
+  </footer>
+  <script>
+     // Function to toggle the side menu
+function toggleMenu() {
+  const sideMenu = document.getElementById('sideMenu');
+  sideMenu.classList.toggle('active');  // Toggle the 'active' class to open/close the menu
+}
+// Add an event listener to change the glow color when clicked
+document.querySelector('.register-btn').addEventListener('click', function() {
+  // Change the button's glow to a different color (e.g., green)
+  this.style.boxShadow = '0 0 20px 5px rgba(0, 255, 0, 1)'; // Green glow on click
+  
+  // Optionally, you can reset the glow after a few seconds:
+  setTimeout(() => {
+    this.style.boxShadow = '0 0 15px 3px rgba(0, 123, 255, 0.8)'; // Back to blue glow
+  }, 3000); // Reset after 3 seconds
+});
+// Track WhatsApp Button Click
+document.querySelectorAll('.whatsapp-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    console.log('WhatsApp button clicked');
+    trackEvent('Button', 'WhatsApp', 'User clicked WhatsApp button');
+  });
+});
+
+// Example Analytics Tracking Function
+function trackEvent(category, action, label) {
+  if (window.gtag) {
+    gtag('event', action, {
+      event_category: category,
+      event_label: label,
+    });
+  } else {
+    console.log(`Event Tracked: ${category} - ${action} - ${label}`);
+  }
+}
+// JavaScript to toggle the visibility of extra audio tracks
+document.querySelector('.more-audios-btn').addEventListener('click', function() {
+  this.classList.toggle('active');
+});
+  </script>
+
+</body>
+</html>
